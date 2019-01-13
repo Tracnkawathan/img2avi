@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- encode: utf-8 -*-
 # @Author   : A.Ohta
-# @Copyright: (c) 2019, connectome.design
 # @Version  : 1.0.0
 """main.py: Convert sequential image files to an .AVI movie file.
 """
@@ -30,8 +29,6 @@ def main():
 
     # make an input list from the input folder.
     filelist = sorted(glob.glob('./input/*'), key=numericalSort)
-    print(filelist)
-    # TODO sort
 
     # define the codec and create the VideoWriter object.
     # determine height and width of the video from the first frame size.
